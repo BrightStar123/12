@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MY Text Animation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script 
+src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script
+  src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/typeit/4.4.0/typeit.min.js"></script>
+  <script src="typeit.js"></script>
+  <style>
+  /* Main styles */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.text {
+  fill: url(#gr-radial);
+ 
+}
+
+/* Other styles */
+
+
+body2 {
+  background: #222 -webkit-linear-gradient(90deg, #222 50%, #272727 50%);
+  background: #222 linear-gradient(90deg, #222 50%, #272727 50%);
+  background-size: .2em 80%;
+  font: 14.5em/1 Open Sans, Impact;
+  text-transform: uppercase;
+  margin:0;
+ 
+}
+
+svg {
+  position:relative;
+  width: 50%;
+  height: 50%;
+ 
+}
+  
+ .text2 {
+  fill: url(#p-fire);
+  stroke: #330000;
+  stroke-width: 8;
+  stroke-opacity: .5;
+}
+
+/* Other styles */
+html, body {
+  height: 50%;
+  width:50%;
+margin-top:20px;
+margin-bottom:20px;
+background-color:black;
+
+}
+
+body{
+  background-size: .2em 100%;
+  font: 14.5em/1 Open Sans, Impact;
+  text-transform: uppercase;
+ 
+  
+}
+  .footer {
+  margin-top:;
+text-transform:capitalize;
+ }
+  </style>
+  </head>
+  
+  <body>
+ 
+  
+ <div class='container'>
+ <div class='row'>
+<div class='col-xs-3 col-sm-3 col-md-3 text-center' style="background-color:#FFF; color:white;">By k.b.
+s </div>
+ <div class='col-xs-9 col-sm-9 col-md-9 text-center' style="background-color:green;">
+ 
+  <svg viewBox="0 0 1000 800">
+
+  <!-- Gradient -------------------------------->
+  <radialGradient id="gr-radial"
+                  cx="50%" cy="50%" r="50%"
+                  >
+    <!-- Animation for radius of gradient -->
+    <animate attributeName="r" 
+             values="200%;150%;100%;0%"
+             dur="30s" repeatCount="indefinite" />
+    <!-- Animation for colors of stop-color -->
+    <stop stop-color="#FFF" offset="100%">
+      <animate attributeName="stop-color" 
+               values="#FFF;#FFF;blue;blue;red;red;Fuchsia;Fuchsia;green;cyan;cyan;"
+               dur="10s" repeatCount="indefinite" />
+    </stop>
+    <stop stop-color="#FFFFFF,0.8" offset="20%"/>
+  </radialGradient>
+
+  <!-- Text -->
+  <text text-anchor="middle"
+        x="50%"
+        y="50%"
+        dy=".35em"
+        class="text"
+        >
+	Dil Jan Pakistan 
+     
+  </text>
+</svg>
+
+</div>
+ 
+
+<div class='col-xs-9 col-sm-9 col-md-9 text-center' style="background-color:green;">
+ 
+ <div class='footer' style='background-color:green;line-height:4.5em;
+ text-align:center;font-size:12pt;color:#9acd32;'>
+ <p>&copy; 2017 &nbsp;&nbsp;  Powered &nbsp; By:- &nbsp; Bakhsh &nbsp;Al Baloshi</p>
+ 
+</div>
+ </div>
+ </div>
+ </div>
+  </body>
+  </html>
